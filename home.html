@@ -16,8 +16,7 @@
         z-index: 1;
         width: 300px;
         background: #fff;
-        margin-right: auto;
-        margin-left: auto;
+        margin: 10px;
       }
 
     </style>
@@ -29,12 +28,19 @@
         $(".drag").draggable({            
             stack: ".drag"
         });
+
+
     });
   </script>
 
 </head>
 <body>
 
+<div id="funhouse" class="drag">
+<center><b>Alex's web funhouse</b><br>Drag us!
+</center></div>
+
+<br>
 
 <div id="about" class="drag">
 <ul><b>About me</b>
@@ -42,13 +48,26 @@
 	<li>Majoring in Computer Science at <a href="http://www.northeastern.edu">Northeastern</a>  (2017)</li>
 </ul></div>
 
-<br>
-
-
 <div id="social" class="drag">
 <ul><b>Social</b>
 	<li><a href="http://www.facebook.com/awscherb">Facebook</a></li>
 	<li><a href="http://www.twitter.com/awscherb93">Twitter</a></li>
 	<li><a href="http://www.instagram.com/awscherb">Instagram</a></li>
 </ul></div>
+
+<br>
+
+<div id="code" class="drag">
+<ul><b>Code</b>
+	<li><a href="https://github.com/awscherb">GitHub</a></li>
+</ul></div>
+<div id="code" class="drag">
+<ul><b>Projects</b>
+	<li><a href="http://awscherb.com/mbta-javascript/mbta">MBTA JavaScript Train Map</a></li>
+</ul></div>
+
+
+<br>
+
+
 </body>
