@@ -8,13 +8,14 @@
  		width: 100%;
  	}
 
-    .drag {
+    .drag {   
         padding: 10px;
         display: inline-block;
         border-style: solid;
         border-width: 3px;
         z-index: 1;
         width: 300px;
+        height: 200px;
         background: #fff;
         margin: 10px;
       }
@@ -26,7 +27,9 @@
  <script>
  $(function () {
         $(".drag").draggable({            
+            snap: true,
             stack: ".drag"
+
         });
 
 
