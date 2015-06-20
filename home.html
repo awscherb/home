@@ -1,0 +1,54 @@
+<head>
+ <style>
+
+ 	html {
+ 		background-image: url("http://awscherb.com/media/7.jpg");
+ 		background-size: cover;
+ 		height: 100%;
+ 		width: 100%;
+ 	}
+
+    .drag {
+        padding: 10px;
+        display: inline-block;
+        border-style: solid;
+        border-width: 3px;
+        z-index: 1;
+        width: 300px;
+        background: #fff;
+        margin-right: auto;
+        margin-left: auto;
+      }
+
+    </style>
+
+<script src="jquery.js"></script>
+<script src="jquery-ui.js"></script>
+ <script>
+ $(function () {
+        $(".drag").draggable({            
+            stack: ".drag"
+        });
+    });
+  </script>
+
+</head>
+<body>
+
+
+<div id="about" class="drag">
+<ul><b>About me</b>
+	<li>Android at <a href="http://www.tablelist.com">Tablelist</a></li>
+	<li>Majoring in Computer Science at <a href="http://www.northeastern.edu">Northeastern</a>  (2017)</li>
+</ul></div>
+
+<br>
+
+
+<div id="social" class="drag">
+<ul><b>Social</b>
+	<li><a href="http://www.facebook.com/awscherb">Facebook</a></li>
+	<li><a href="http://www.twitter.com/awscherb93">Twitter</a></li>
+	<li><a href="http://www.instagram.com/awscherb">Instagram</a></li>
+</ul></div>
+</body>
